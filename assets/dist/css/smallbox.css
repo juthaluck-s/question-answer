@@ -1,0 +1,24 @@
+.small-box.custom-bg1 {
+  background-color: #afafaf !important; /* สีพื้นหลัง */
+  color: #000000 !important; /* สีข้อความ */
+}
+.small-box > .small-box-footer.custom-bg1 {
+  color: #000000;
+}
+
+.small-box.custom-bg2 {
+  background-color: #fcca35 !important; /* สีพื้นหลัง */
+  color: #000000 !important; /* สีข้อความ */
+}
+.small-box > .small-box-footer.custom-bg2 {
+  color: #000000;
+}
+
+.small-box.custom-bg3 {
+  background-color: #fcca35 !important; /* สีพื้นหลัง */
+  color: #000000 !important; /* สีข้อความ */
+}
+.small-box > .small-box-footer.custom-bg3 {
+  color: #000000;
+}
+

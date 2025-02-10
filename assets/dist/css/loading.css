@@ -1,0 +1,34 @@
+#loadingOverlay {
+    width: 150px;
+    position: fixed;
+    inset: 0px;
+    max-width: 100vw;
+    max-height: 100dvh;
+    margin: auto;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    /* เพิ่มพื้นหลังสีดำอ่อน */
+    background: radial-gradient(farthest-side, #ffa516 94%, #0000) top / 8px 8px no-repeat,
+        conic-gradient(#0000 30%, #ffa516);
+    -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+    animation: l13 1s infinite linear;
+    z-index: 9999;
+    /* ทำให้ overlay อยู่เหนือทุกอย่าง */
+}
+
+#loadingBackground {
+    position: fixed;
+    inset: 0;
+    /* ครอบคลุมทั้งหน้าจอ */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* สีดำโปร่งแสง */
+    z-index: 9998;
+    /* ใต้ #loadingOverlay */
+}
+
+@keyframes l13 {
+    100% {
+        transform: rotate(1turn);
+    }
+}
