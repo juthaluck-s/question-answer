@@ -29,7 +29,9 @@ try {
 <aside class="main-sidebar sidebar-dark-info elevation-4">
     <!-- Brand Logo -->
     <a href="" class="brand-link">
-        <img src="../assets/dist/img/nt-new-logo-long.png" alt="JBCompLogo" class="brand-image img-circle ">
+        <!-- <img src="../assets/dist/img/Message9.webp" alt="Knowledge" class="brand-image img-circle "> -->
+
+        <img src="../assets/dist/img/Message11.webp" alt="Knowledge" class="brand-image img ">
         <span class="brand-text font-weight-light">Knowledge</span>
     </a>
 
@@ -38,8 +40,10 @@ try {
         <!-- โปรไฟล์ Sidebar user panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-                <img src="../assets/dist/img/avatar5.png" class="img-circle elevation-2" alt="User Image"
-                    style="margin-top: 10px;">
+                <!-- <img src="../assets/dist/img/avatar5.png" class="img-circle elevation-2" alt="User Image"
+                    style="margin-top: 10px;"> -->
+
+                <img src="../assets/dist/img/user1.webp" class="img-circle " alt="User Image" style="margin-top: 10px;">
             </div>
 
             <div class="info">

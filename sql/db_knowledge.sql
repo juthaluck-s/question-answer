@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 07, 2025 at 05:56 AM
+-- Generation Time: Feb 24, 2025 at 04:39 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -31,7 +31,7 @@ CREATE TABLE `tbl_detail` (
   `id_detail` int(11) NOT NULL,
   `id_topic` int(11) NOT NULL,
   `detail` text DEFAULT NULL,
-  `upload_file_comment` varchar(100) DEFAULT NULL,
+  `upload_file_comment` longtext DEFAULT NULL,
   `id_member` int(11) NOT NULL,
   `dateSave_comment` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -88,9 +88,9 @@ CREATE TABLE `tbl_topic` (
   `topic` varchar(250) NOT NULL,
   `type_topic` varchar(80) DEFAULT NULL,
   `detail_topic` text NOT NULL,
-  `upload_file` varchar(100) DEFAULT NULL,
-  `views` int(11) NOT NULL,
-  `reply` int(5) NOT NULL,
+  `upload_file` longtext DEFAULT NULL,
+  `views` int(11) NOT NULL DEFAULT 0,
+  `reply` int(5) NOT NULL DEFAULT 0,
   `id_member` int(11) NOT NULL,
   `dateSave` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
