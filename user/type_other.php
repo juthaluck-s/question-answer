@@ -1,14 +1,14 @@
 <?php
-$queryType_router = $condb->prepare("
+$queryType_Other = $condb->prepare("
 SELECT tp.id_topic, tp.type_topic, tp.topic, tp.dateSave, tp.views, tp.reply,
        us.firstname, us.lastname
 FROM tbl_topic tp
 JOIN tbl_user us ON tp.id_member = us.id_member
-WHERE tp.type_topic = 'Router'
+WHERE tp.type_topic = 'Other'
 ORDER BY tp.dateSave DESC;
 ");
-$queryType_router->execute();
-$type_rt = $queryType_router->fetchAll();
+$queryType_Other->execute();
+$type_Other = $queryType_Other->fetchAll();
 ?>
 
 <!-- Content Wrapper. Contains page content -->
@@ -18,7 +18,7 @@ $type_rt = $queryType_router->fetchAll();
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>Type : Router</h1>
+                    <h1>Type : Other</h1>
                 </div>
             </div>
         </div>
@@ -36,7 +36,7 @@ $type_rt = $queryType_router->fetchAll();
                                     <tr class="table-info">
                                         <th width="4%" class="text-center">No.</th>
                                         <th width="12%" class="text-center">Type</th>
-                                        <th class="text-center">Question</th>
+                                        <th class="text-center">Topic</th>
                                         <th width="15%" class="text-center">User</th>
                                         <th width="15%" class="text-center">DateTime</th>
                                         <th width="5%" class="text-center">View</th>
@@ -46,7 +46,7 @@ $type_rt = $queryType_router->fetchAll();
                                 <tbody>
                                     <?php
                                     $index = 1; // กำหนดลำดับหมายเลข
-                                    foreach ($type_rt as $row) {
+                                    foreach ($type_Other as $row) {
                                     ?>
                                         <tr>
                                             <td align="center"><?= $index++; ?> </td>

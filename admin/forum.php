@@ -58,6 +58,7 @@ usort($rsAll_Qt, function ($a, $b) {
                                         <th width="15%" class="text-center">DateTime</th>
                                         <th width="5%" class="text-center">View</th>
                                         <th width="5%" class="text-center">Reply</th>
+                                        <th width="5%" class="text-center">Delete</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -88,6 +89,11 @@ usort($rsAll_Qt, function ($a, $b) {
                                         </td>
                                         <td align="center">
                                             <?= $row['reply']; ?>
+                                        </td>
+                                        <td align="center" style=" vertical-align: middle;">
+                                            <a href="index.php?id=<?= $row['id_topic']; ?>&act=delete_topic"
+                                                class="btn-danger btn-sm"
+                                                onclick="return confirm('ยืนยันการลบข้อมูล??');">Delete</a>
                                         </td>
                                     </tr>
                                     <?php } ?>
@@ -131,6 +137,7 @@ usort($rsAll_Qt, function ($a, $b) {
                                         <th width="15%" class="text-center">DateTime</th>
                                         <th width="5%" class="text-center">View</th>
                                         <th width="5%" class="text-center">Reply</th>
+                                        <th width="5%" class="text-center">Delete</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -160,6 +167,11 @@ usort($rsAll_Qt, function ($a, $b) {
                                         </td>
                                         <td align="center">
                                             <?= (isset($row['reply']) && $row['reply'] !== null) ? $row['reply'] : '-'; ?>
+                                        </td>
+                                        <td align="center" style=" vertical-align: middle;">
+                                            <a href="index.php?id=<?= $row['id_topic']; ?>&act=delete_topic"
+                                                class="btn-danger btn-sm"
+                                                onclick="return confirm('ยืนยันการลบข้อมูล??');">Delete</a>
                                         </td>
                                     </tr>
                                     <?php } ?>

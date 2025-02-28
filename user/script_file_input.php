@@ -52,14 +52,7 @@ document.getElementById('file-input').addEventListener('change', function() {
         this.value = "";
 
     } else {
-        // อัปเดตชื่อไฟล์ที่เลือก
-        if (files.length === 1) {
-            label.textContent = files[0].name;
-        } else if (files.length > 1) {
 
-        } else {
-
-        }
     }
 });
 </script>

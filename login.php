@@ -36,7 +36,7 @@ if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['acti
 
         //สร้างเงื่อนไขตรวจสอบสิทธิ์การใช้งาน
         if ($_SESSION['user_level'] == 'admin') { //admin
-            header('Location: forum/'); //login ถูกต้องและกระโดดไปหน้าตามที่ต้องการ
+            header('Location: admin/'); //login ถูกต้องและกระโดดไปหน้าตามที่ต้องการ
         } else if ($_SESSION['user_level'] == 'user') {
             header('Location: user/'); //user
         }

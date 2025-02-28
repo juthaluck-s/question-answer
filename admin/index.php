@@ -8,6 +8,8 @@ if ($act == 'add') {
     include 'question_add.php';
 } else if ($act == 'view') {
     include 'question_view.php';
+} else if ($act == 'delete_topic') {
+    include 'topic_delete.php';
 } else if ($act == 'delete') {
     include 'reply_delete.php';
 } else if ($act == 'supercore') {
